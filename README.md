@@ -1,6 +1,23 @@
 # bleu_score
 
-Below are the deliverables for Assignment 9 along with a description of the `bleu.py` BLEU score calculator I implemented.
+**The seven files contained in this repository are listed and described below:**
+
+`bleu.py` contains the code that calculates the BLEU score according to my implementation. Uncomment line 11 or 13 in order to choose between the different translation files (`translation1.txt`, etc.). The script iterates through each line in the reference and candidate files and accumulates the number of n-grams. After that, the BLEU score is calculated and displayed in the terminal.
+
+`source.txt` contains the source text from the dataset given to us in class including the 50 sentances used in the DQF
+
+`reference.txt` contains the reference translation from the dataset given to us in class
+
+`translation1.txt` contains the Google Tranlsate output of `source.txt`
+
+`translation2.txt` contains the DeepL output of `source.txt`
+
+`dqf.png` is the image that shows the results of the manual ranking
+
+`tilde_bleu.png` is the image that shows the results of the BLEU score calculation from Tilde Custom Machine Translation
+
+
+**Below are the deliverables for Assignment 9:**
 
 1121 sentances translated by Google Translate and DeepL
 
@@ -29,18 +46,3 @@ Provide your thoughts/hypothesis on why they did or did not correlate.
 - I belive that my success in computing consistent BLEU scores and having their scores match the manual ranking is due to the fact that I was easily able to find 1000+ sentances. The larger the dataset is, the more likely the BLEU scores are to be consistent because the effects of outliers are minimized.
 
 
-**The seven files contained in this repository are listed and described below:**
-
-`bleu.py` contains the code that calculates the BLEU score according to my implementation. Uncomment line 11 or 13 in order to choose between the different translation files (`translation1.txt`, etc.). The script iterates through each line in the reference and candidate files and accumulates the number of n-grams. After that, the BLEU score is calculated and displayed in the terminal.
-
-`source.txt` contains the source text from the dataset given to us in class including the 50 sentances used in the DQF
-
-`reference.txt` contains the reference translation from the dataset given to us in class
-
-`translation1.txt` contains the Google Tranlsate output of `source.txt`
-
-`translation2.txt` contains the DeepL output of `source.txt`
-
-`dqf.png` is the image that shows the results of the manual ranking
-
-`tilde_bleu.png` is the image that shows the results of the BLEU score calculation from Tilde Custom Machine Translation
